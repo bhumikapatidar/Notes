@@ -15,8 +15,6 @@ const reviewSchema = yup.object({
 });
 
 export default function AddNotes2({ navigation }) {
-    // const [title, setNoteTitle] = useState('')
-    // const [text, setNoteText] = useState('')
     const [date, setDate] = useState(moment(new Date()).format('MMMM Do YYYY, h:mm:ss a'));
 
     return (

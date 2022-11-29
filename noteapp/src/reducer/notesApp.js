@@ -1,4 +1,3 @@
-import remove from 'lodash.remove'
 export const ADD_NOTE = 'ADD_NOTE'
 export const DELETE_NOTE = 'DELETE_NOTE'
 
@@ -36,11 +35,6 @@ function notesReducer(state = initialState, action) {
             ]
 
         case DELETE_NOTE:
-            // const deleteNewArray = remove(state, obj => {
-            //     return obj.id != action.payload
-            // })
-
-            // return deleteNewArray
             return state.filter(({id}) => id !== action.payload)
 
         default:
